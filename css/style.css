@@ -1,0 +1,36 @@
+* {
+  transition: all 0.3s;
+}
+
+body {
+  background: #ecbbca;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: calibri;
+  font-size: 120%;
+}
+
+#bienvenida {
+  text-align: center;
+  padding: 5px;
+}
+
+.container{
+  padding: 20px;
+}
+
+#juego {
+  text-align: justify-all;
+}
+
+#resultados {
+  text-align: center;
+}
+
+button{
+  border-style: 0.5px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+}

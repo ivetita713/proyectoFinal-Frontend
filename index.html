@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trivia</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Pantalla de bienvenida -->
+  <div id="bienvenida">
+    Nombre: <input type="text" id="nombre">
+    <button onclick="comenzar()">Jugar!</button>
+  </div>
+
+
+  <!-- Pantalla del juego -->
+  <div class="container">
+    <div id="juego" style=display:none>
+      <p id="parrafo"></p>
+      <form id="form1">
+        <p>¿Quién es el actor de la saga "Misión imposible"?</p>
+        <label><input type="radio" name="actor" value="Tom Cruise">Tom Cruise</label><br>
+        <label><input type="radio" name="actor" value="Brad Pitt">Brad Pitt</label><br>
+        <label><input type="radio" name="actor" value="Zac Efron">Zac Efron</label><br>
+      </form>
+      <form id="form2">
+        <p>Actriz famosa por su papel de Hermione en "Harry Potter":</p>
+        <label><input type="radio" name="actriz" value="Emma Watson">Emma Watson</label><br>
+        <label><input type="radio" name="actriz" value="Julia Roberts">Julia Roberts</label><br>
+        <label><input type="radio" name="actriz" value="Selena Gomez">Selena Gomez</label>
+      </form>
+      <form id="form3">
+        <p>¿Quién protagoniza Pretty Woman?</p>
+        <label><input type="radio" name="pretty" value="Nicholas Cage">Nicholas Cage</label><br>
+        <label><input type="radio" name="pretty" value="Nick Nolte">Nick Nolte</label><br>
+        <label><input type="radio" name="pretty" value="Richard Gere">Richard Gere</label>
+      </form>
+      <button onclick="responder()">Responder y ver resultados</button>
+    </div>
+    <!-- Pantalla de resultados -->
+    <div id="resultados" style=display:none>
+      <div>
+        <p>Respuestas correctas</p>
+        <p>Tom Cruise</p>
+        <p>Emma Watson</p>
+        <p>Richard Gere</p>
+        <br>
+        <p>Tus respuestas</p>
+        <p id="r1"></p>
+        <p id="r2"></p>
+        <p id="r3"></p>
+      </div>
+      <!-- Botón de reinicio -->
+      <input type="button" value="Volver a jugar" onClick="document.location.reload(true)">
+    </div>
+
+</body>
+
+</html>
